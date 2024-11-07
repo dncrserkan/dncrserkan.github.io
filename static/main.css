@@ -1,0 +1,191 @@
+
+body {
+    padding-top: 5rem;
+    height: 100vh;
+    font-family: "Inter";
+
+    color: #212529;
+    background: 
+        url("/static/images/background.png"),
+        radial-gradient(at 30% 75%, #eef2f4 0%, #c4ced3 50%);
+    background-repeat: no-repeat;
+    background-position-y: 5%;
+    background-position-x: 70%;
+    background-blend-mode: color-burn, soft-light, screen;
+    background-attachment: fixed;
+  }
+
+a {
+    color:#212529;
+    text-decoration: none;
+  }
+
+
+.site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #e3c113ff;
+  }
+
+.site-header .navbar-nav .nav-link.active {
+    color: #cbd5db;
+    font-weight: 600;
+  }
+
+.navbar-brand {
+    color: #cbd5db;
+  }
+.navbar-brand:hover {
+    color: #e3c113ff;
+  }
+
+
+.icon {
+    height: 24px;
+  }
+
+
+/* TABS */
+.tab {
+    display: none;
+  }
+.tab.active {
+    margin-top:10rem; 
+    margin-left:2rem; 
+    display: block;
+    text-align: justify;
+  }
+.tabs {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+
+
+/* HOME */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+.title-2 {
+    font-size: 20px;
+  }
+.title-left {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  
+.title-right {
+    float: right;
+    text-align: right;
+    margin-right: 3rem;
+  }
+.title-center{
+    text-align: center;
+  }
+
+.text {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    text-align: justify;
+  }
+
+
+/* EXPERIENCE */
+.job-box {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+.position {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+.company {
+    font-weight: normal;
+    font-size: 18px;
+    margin-inline-start: 2rem;
+  }
+.extra {
+    font-weight: normal;
+    font-size: 18px;
+    margin-inline-end: 2rem;
+    float: right;
+    text-align: right;
+  }
+
+.description {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+  }
+
+/* Courses */
+.course-box {
+    margin-left: 1rem;
+  }
+
+.course-name {
+    font-weight: bold;
+  }
+
+.course-desc{
+    margin-left: 1rem;
+  }
+
+.ps {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    float: right;
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+  }
+
+/* RESUME */
+.modal-body {
+    width: 100%;
+    aspect-ratio: 1/1.414;
+  }
+.frame {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 1200px) {
+  .col-md-6 {
+      display: none;
+  }
+
+  .tab.active {
+      margin-top:2rem;
+      margin-left:0rem; 
+      display: block;
+      text-align: justify;
+  }
+
+  .text {
+    margin-top: 3rem;
+    margin-left: 0rem;
+    text-align: justify;
+  }
+
+  .description {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    text-align: justify;
+  }
+
+  .course-desc{
+    margin-left: 0rem;
+  }
+
+}
