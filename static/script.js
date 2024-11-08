@@ -70,6 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.navbar-brand').addEventListener('click', closeNavbar);
 
+    document.querySelector('.navbar-toggler').addEventListener('click', closeNavbar);
+
+
     document.addEventListener('click', (event) => {
     const isClickInside = document.querySelector('.navbar').contains(event.target);
     if (!isClickInside) {
