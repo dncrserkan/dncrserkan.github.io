@@ -65,19 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
-    link.addEventListener('click', closeNavbar);
+        link.addEventListener('click', closeNavbar);
     });
 
     document.querySelector('.navbar-brand').addEventListener('click', closeNavbar);
 
-    document.querySelector('.navbar-toggler-icon').addEventListener('click', closeNavbar);
-
+    document.querySelector('.navbar-toggler').addEventListener('click', closeNavbar);
 
     document.addEventListener('click', (event) => {
-    const isClickInside = document.querySelector('.navbar').contains(event.target);
-    if (!isClickInside) {
-        closeNavbar();
-    }
+        const isClickInside = document.querySelector('.navbar').contains(event.target);
+        if (!isClickInside) {
+            closeNavbar();
+        }
     });
 
 
