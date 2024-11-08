@@ -64,23 +64,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    // document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
-    //     link.addEventListener('click', closeNavbar);
-    // });
+    document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
+        link.addEventListener('click', closeNavbar);
+    });
 
-    // document.querySelector('.navbar-brand').addEventListener('click', closeNavbar);
+    document.querySelector('.navbar-brand').addEventListener('click', closeNavbar);
 
-    // document.querySelector('.navbar-toggler).addEventListener('click', closeNavbar);
+    document.querySelector('.navbar-toggler').addEventListener('click', closeNavbar);
 
-    // document.addEventListener('click', (event) => {
-    //     const isClickInside = document.querySelector('.navbar').contains(event.target);
-    //     if (!isClickInside) {
-    //         closeNavbar();
-    //     }
-    // });
+    document.addEventListener('click', (event) => {
+        const isClickInside = document.querySelector('.navbar').contains(event.target);
+        if (!isClickInside) {
+            closeNavbar();
+        }
+    });
 
 
-    document.addEventListener('click', closeNavbar);
+    // document.addEventListener('click', closeNavbar);
 
 
 });
