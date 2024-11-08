@@ -160,6 +160,18 @@ a {
 
 
 @media (max-width: 1200px) {
+  body {
+    padding-top: 5rem;
+    height: 100vh;
+    font-family: "Inter";
+
+    color: #212529;
+    background: 
+        radial-gradient(at 30% 75%, #eef2f4 0%, #c4ced3 50%);
+    background-attachment: fixed;
+  }
+
+
   .col-md-6 {
       display: none;
   }
